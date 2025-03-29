@@ -4,10 +4,11 @@
   padding: 70px 20px;
   max-width: 1200px;
   margin: auto;
-  margin-top: -80px;
+  margin-top: -180px;
   /* margin-top:-10%; */
 }
 .our-parish-container{
+  padding-top: 140px;
   background-color: rgb(245, 243, 243);
 }
 
