@@ -115,10 +115,10 @@
   text-align: left;
   transition: opacity 0.3s ease-in-out;
 }
-
+/* 
 .right-side:hover .rect-title {
   color: #28a745;
-}
+} */
 
 .right-side:hover .rect-desc {
   opacity: 0.9;

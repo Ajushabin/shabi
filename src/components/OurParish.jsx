@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import "../Style/OurParish.css"; // Ensure this CSS file exists
 
 // Importing images correctly
-import Image1 from "../images/aju.webp";
-import Image2 from "../images/image2.png";
-import Image3 from "../images/image3.png";
+import Image1 from "../images/aju.jpeg";
+import Image2 from "../images/appu.jpeg";
+import Image3 from "../images/ashik.jpeg";
+import Image4 from "../images/rani.jpeg";
+import Image5 from "../images/jenish.jpeg";
+
 
 //importring images for counsil members
 import Sajitha from "../images/council/sajitha.png"
@@ -13,6 +16,8 @@ import Jeniba from "../images/council/jeniba.png"
 import Ashwin from "../images/council/ashwin.png"
 import Gladis from "../images/council/gladislily.png"
 import Jerin from "../images/council/jerin.png"
+import mariya from "../images/council/maraiya.jpeg"
+
 
 const members = [
   { id: 1, name: "Priest (President)", dob: "Jan 1, 1980", original: "Fr. Maria William", img: Image1 },
@@ -21,8 +26,8 @@ const members = [
 ];
 
 const member1 = [
-  { id: 1, name: "Treasurer", dob: "Jan 1, 1980", original: "Mrs. Charlet Rani", img: Image1 },
-  { id: 2, name: "Co-Secretary", dob: "Feb 15, 1985", original: "Mr. Jenish", img: Image2 },
+  { id: 1, name: "Treasurer", dob: "Jan 1, 1980", original: "Mrs. Charlet Rani", img: Image4 },
+  { id: 2, name: "Co-Secretary", dob: "Feb 15, 1985", original: "Mr. Jenish", img: Image5 },
 ];
 
 const counsil = [
@@ -32,7 +37,7 @@ const counsil = [
   { id: 2, name: "ASHWIN A", dob: "July 21, 1995",original:"ASHWIN A", img: Ashwin,p:"அன்பியம்-06" },
   { id: 2, name: "GLADIS LILY", dob: "Feb 15, 1985",original:"GLADIS LILY", img: Gladis,p:"this is the description for the image" },
   { id: 2, name: "JERIN", dob: "Feb 15, 1985",original:"JERIN", img: Jerin,p:"this is the description for the image" },
-  { id: 2, name: "Vice-President", dob: "Feb 15, 1985",original:"Aju", img: "../src/images/image2.png",p:"this is the description for the image" },
+  { id: 2, name: "MARIYA SELVAM", dob: "Feb 15, 1985",original:"MARIYA SELVAM", img: mariya,p:"மறைக் கல்வி பொருளாளர்" },
   { id: 2, name: "Vice-President", dob: "Feb 15, 1985",original:"Aju", img: "../src/images/image2.png",p:"this is the description for the image" },
   { id: 2, name: "Vice-President", dob: "Feb 15, 1985",original:"Aju", img: "../src/images/image2.png",p:"this is the description for the image" },
   { id: 2, name: "Vice-President", dob: "Feb 15, 1985",original:"Aju", img: "../src/images/image2.png",p:"this is the description for the image" },
@@ -90,7 +95,7 @@ const OurParish = () => {
 
       {/* Council Members */}
       <div className="our-parish-container mb-5">
-        <h2 className="mt-5">Meet Our Parish Council Members</h2>
+        <h2 className="mt-5">Our Council Members</h2>
         
         <div className="container-fluid members-list mt-5">
           {counsil.map((councilMember) => (
