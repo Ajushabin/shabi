@@ -41,10 +41,13 @@ const Nav = () => {
   return (
     <nav className={`navbar1 ${scrolling ? "scrolled" : "transparent"}`}>
       <div className="container-fluid">
-        <Link className="navbar1-brand" to="/" onClick={closeMenu}>
-          <img src={Logo} alt="Logo" className="logo1" />
-          <h1>St Joseph Church</h1>
-        </Link>
+      <Link className="navbar1-brand" to="/" onClick={closeMenu}>
+  <img src={Logo} alt="Logo" className="logo1" />
+  <h1>
+    St Joseph Church
+    <span className="newline">Kamplar</span>
+  </h1>
+</Link>
         <button className="navbar1-toggler" type="button" onClick={toggleNavbar}>
           <FontAwesomeIcon icon={navbarOpen ? faTimes : faBars} size="2x" />
         </button>

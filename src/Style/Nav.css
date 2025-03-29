@@ -217,6 +217,12 @@
   margin-top: 2px;
   padding: 20px;
 }
+.newline {
+  font-family: 'Times New Roman', Times, serif;
+  display: block; /* Moves "Kamplar" to the next line */
+  text-align: center; /* Optional: Centers the text */
+  font-size: 2rem; /* Adjust as needed */
+}
 /* Updated Responsive CSS */
 @media (max-width: 768px) {
   .navbar1 {
