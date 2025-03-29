@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "./", // Ensure correct asset loading in Netlify
   plugins: [react()],
   optimizeDeps: {
     include: ['react-bootstrap', 'bootstrap']
