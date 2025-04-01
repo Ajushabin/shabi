@@ -32,6 +32,9 @@ import Three from "./components/participative-structures/Three";
 import Four from "./components/participative-structures/Four";
 import Five from "./components/participative-structures/Five";
 import Service from "./components/Service";
+
+import About from "./components/About";
+
 function App() {
   const location = useLocation();
 
@@ -72,6 +75,8 @@ function App() {
         <Route path="/four" element={<Four />} />
         <Route path="/five" element={<Five />} />
         <Route path="/service" element={<Service />} />
+        <Route path="/about" element={<About />} />
+
       </Routes>
       <Footer />
     </>

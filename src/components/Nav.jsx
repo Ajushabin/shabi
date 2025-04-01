@@ -58,7 +58,7 @@ const Nav = () => {
               <ul className={`dropdown-menu3 ${dropdownOpen === "home" ? "show" : ""}`}>
               <li><Link className="dropdown-item4" to="/" onClick={closeMenu}>Home</Link></li>
 
-                <li><Link className="dropdown-item4" to="/ourparish" onClick={closeMenu}>About us</Link></li>
+                <li><Link className="dropdown-item4" to="/about" onClick={closeMenu}>About us</Link></li>
                 <li><Link className="dropdown-item4" to="/anbiyangal" onClick={closeMenu}>History</Link></li>
                 <li><Link className="dropdown-item4" to="/service" onClick={closeMenu}>Our people at Service</Link></li>
               </ul>

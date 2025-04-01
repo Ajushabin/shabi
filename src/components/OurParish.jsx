@@ -20,14 +20,14 @@ import mariya from "../images/council/maraiya.jpeg"
 
 
 const members = [
-  { id: 1, name: "Priest (President)", dob: "Jan 1, 1980", original: "Fr. Maria William", img: Image1 },
-  { id: 2, name: "Vice-President", dob: "Feb 15, 1985", original: "Mr. Richard Joseph Raj", img: Image2 },
-  { id: 3, name: "Secretary", dob: "Mar 22, 1990", original: "Mrs. Jacqulin", img: Image3 },
+  { id: 1, name: "Priest (President)", dob: "Jan 1, 1980", original: "Fr. Maria William", img: Image1,p:"இளைஞர் இயக்கம்(பெண்கள்)" },
+  { id: 2, name: "Vice-President", dob: "Feb 15, 1985", original: "Mr. Richard Joseph Raj", img: Image2,p:"இளைஞர் இயக்கம்(பெண்கள்)" },
+  { id: 3, name: "Secretary", dob: "Mar 22, 1990", original: "Mrs. Jacqulin", img: Image3,p:"இளைஞர் இயக்கம்(பெண்கள்)" },
 ];
 
 const member1 = [
-  { id: 1, name: "Treasurer", dob: "Jan 1, 1980", original: "Mrs. Charlet Rani", img: Image4 },
-  { id: 2, name: "Co-Secretary", dob: "Feb 15, 1985", original: "Mr. Jenish", img: Image5 },
+  { id: 1, name: "Treasurer", dob: "Jan 1, 1980", original: "Mrs. Charlet Rani", img: Image4 ,p:"இளைஞர் இயக்கம்(பெண்கள்)"},
+  { id: 2, name: "Co-Secretary", dob: "Feb 15, 1985", original: "Mr. Jenish", img: Image5,p:"இளைஞர் இயக்கம்(பெண்கள்)" },
 ];
 
 const counsil = [
@@ -66,6 +66,7 @@ const OurParish = () => {
             <div key={member.id} className="member-row" onClick={() => setSelectedMember(member)}>
               <img src={member.img} alt={member.name} className="member-image" />
               <h3 className="member-name">{member.name}</h3>
+              <p>{member.p}</p>
             </div>
           ))}
         </div> 
@@ -76,6 +77,7 @@ const OurParish = () => {
             <div key={member1.id} className="member-row" onClick={() => setSelectedMember(member1)}>
               <img src={member1.img} alt={member1.name} className="member-image" />
               <h3 className="member-name">{member1.name}</h3>
+              <p>{member1.p}</p>
             </div>
           ))}
         </div>

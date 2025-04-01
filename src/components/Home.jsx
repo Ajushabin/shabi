@@ -10,6 +10,8 @@ import Event from "../components/Event";
 import History from "../components/History";
 import VIdeoLink from "../components/VIdeoLink"
 import ParticipateStructers from "../components/participative-structures/ParticipateStructers";
+// import About from "../components/About.jsx";
+
 
 const Home = () => {
   const [showContent, setShowContent] = useState(false);
@@ -37,7 +39,7 @@ const Home = () => {
        
         <VIsitingTime />
         <ImageLink /> 
-        
+        {/* <About /> */}
          <VIdeoLink />
         <Family /> 
         <ParticipateStructers/>
